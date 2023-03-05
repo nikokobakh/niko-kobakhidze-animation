@@ -1,0 +1,44 @@
+section{
+	position: relative;
+	padding: 100px 0;
+
+}
+.left, .right{
+	display: inline-block;
+	position: absolute;
+
+	width: 100px;
+	padding: 100px;
+}
+.left{
+	top: 50%;
+	left: 0;
+	animation-name: moverigt;
+	animation-delay: 1s;
+	animation-duration: 3s;
+	animation-timing-function:linear;
+
+	animation-iteration-count: 5;
+
+	animation-direction: alternate;
+	animation-fill-mode: forwards;
+
+}
+.right{
+	right: 0;
+	top: 50%;
+}
+.left{
+	right: 50%;
+	top: 0;
+}
+@keyframes animation{
+	from{
+		background-position: 0 0;
+
+	}
+	to{
+		background-position: 100% 0;
+
+	}
+}
